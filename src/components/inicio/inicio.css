@@ -1,0 +1,77 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 650px;
+  max-width: 90vw;
+  height: auto;
+  animation: flutuar 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+.text-presention {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  section {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 10px 20px 10px;
+    gap: 30px;
+  }
+  img {
+    width: 400px;
+    max-width: 95vw;
+  }
+  .text-presention {
+    max-width: 90vw;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  section {
+    padding: 20px 2vw;
+    gap: 16px;
+  }
+  img {
+    width: 90vw;
+    max-width: 95vw;
+  }
+  .text-presention {
+    gap: 10px;
+    font-size: 0.97rem;
+  }
+  .text-presention h1 {
+    font-size: 1.2rem;
+  }
+  .text-presention p {
+    font-size: 1rem;
+  }
+}
+

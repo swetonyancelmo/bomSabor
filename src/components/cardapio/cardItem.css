@@ -1,0 +1,43 @@
+:root {
+  --primary-red: #C0392B;
+  --primary-yellow: #F4D03F;
+  --primary-green: #229954;
+  --wood-brown: #784212;
+  --text-dark: #222;
+  --background: #fff;
+}
+
+.card-cardapio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  flex-direction: column;
+  background: var(--background);
+  border: 2px solid var(--primary-yellow);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 20px;
+  text-align: center;
+  width: 260px;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.card-cardapio:hover {
+  transform: scale(1.04);
+  border-color: var(--primary-red);
+}
+
+.image-pizza1 {
+  width: 120px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.price-decoration {
+  color: var(--primary-green);
+  font-weight: bold;
+  font-size: 20px;
+}

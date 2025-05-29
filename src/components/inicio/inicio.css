@@ -1,4 +1,13 @@
-section {
+:root {
+  --primary-red: #C0392B;
+  --primary-yellow: #F4D03F;
+  --primary-green: #229954;
+  --wood-brown: #784212;
+  --text-dark: #222;
+  --background: #fff;
+}
+
+.section-inicio {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +17,7 @@ section {
   flex-wrap: wrap;
 }
 
-img {
+.image-pizza {
   width: 650px;
   max-width: 90vw;
   height: auto;
@@ -36,15 +45,22 @@ img {
   width: 100%;
 }
 
-/* Tablets */
+.text-presention h1 {
+  color: var(--primary-red);
+}
+
+.text-presention p {
+  color: var(--text-dark);
+}
+
 @media (max-width: 900px) {
-  section {
+  .section-inicio {
     flex-direction: column;
     height: auto;
     padding: 40px 10px 20px 10px;
     gap: 30px;
   }
-  img {
+  .image-pizza {
     width: 400px;
     max-width: 95vw;
   }
@@ -53,9 +69,8 @@ img {
   }
 }
 
-/* Celulares */
 @media (max-width: 600px) {
-  section {
+  .section-inicio {
     padding: 20px 2vw;
     gap: 16px;
   }

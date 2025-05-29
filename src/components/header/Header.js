@@ -7,9 +7,9 @@ export default function Header() {
       <h1 className='h1-header'>Pizzaria Bom Sabor</h1>
       
       <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Cardápio</a></li>
-        <li><button><a href="#">Contato</a></button></li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </header>
   );

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+:root {
+  --primary-red: #C0392B;
+  --primary-yellow: #F4D03F;
+  --primary-green: #229954;
+  --wood-brown: #784212;
+  --text-dark: #222;
+  --background: #fff;
+}
 
 * {
   margin: 0;
@@ -8,47 +16,43 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Remover outline apenas se for substituir por outro estilo de acessibilidade */
 *:focus {
-  outline: 2px solid #ff9800; /* exemplo de cor de destaque */
+  outline: 2px solid var(--primary-yellow);
   outline-offset: 2px;
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 16px;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #fff;
-  color: #222;
+  background: var(--background);
+  color: var(--text-dark);
 }
 
-/* Remover decoração de links */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Remover estilo de lista padrão */
 ul {
   list-style: none;
 }
 
-/* Facilitar uso de imagens responsivas */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* Garantir que botões não tenham borda e fundo padrão */
 button {
   border: none;
   background: none;
   cursor: pointer;
   font-family: inherit;
-  background-color: #222;
+  background-color: var(--primary-red);
   color: #fff;
   padding: 10px;
   border-radius: 5px;
@@ -56,6 +60,11 @@ button {
 }
 
 button:hover {
-  background-color: #222222e8;
+  background-color: var(--primary-green);
   transform: scale(1.05);
+}
+
+.direitos {
+  text-align: center;
+  padding-bottom: 10px;
 }

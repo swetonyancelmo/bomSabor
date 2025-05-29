@@ -18,8 +18,8 @@ export default function Inicio() {
   }, []);
 
   return (
-    <section>
-      <img src={pizzaImg1} alt="Pizza deliciosa" />
+    <section id="inicio" className="section-inicio">
+      <img className="image-pizza" src={pizzaImg1} alt="Pizza deliciosa" />
       <div className="text-presention">
         <h1>{typedText}</h1>
         <p>

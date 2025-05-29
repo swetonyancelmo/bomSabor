@@ -10,12 +10,12 @@ export default function Contatos(){
 
       <div className='div-links'>
         <a
-          href="https://wa.me/81993082594?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!"
+          href="https://wa.me/81999999999?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!"
           target="_blank"
           rel="noopener noreferrer"
         ><button className='btn-whatsapp' data-aos="fade-up"><FontAwesomeIcon icon={faWhatsapp} /> WhatsApp</button></a>
         <a
-          href="https://instagram.com/suapizzaria"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         ><button className='btn-instagram' data-aos="fade-up"><FontAwesomeIcon icon={faInstagram} /> Instagram</button></a>
